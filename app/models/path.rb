@@ -5,11 +5,7 @@ class Path < ApplicationRecord
     index_name: 'my_new_index',
     enqueue: :trigger_algolia_worker
   ) do
-    attribute :title, :description, :state
-  end
-
-  def algolia_id
-    self.id
+    attribute :title, :description
   end
 
   def self.trigger_algolia_worker(path, remove)

@@ -72,6 +72,7 @@ FactoryBot.define do
   factory :path do
     title { "This is a title!" }
     description  { "And a description!" }
+    algolia_id  { "my-id-1" }
     archive_number { 100 }
   end
 end

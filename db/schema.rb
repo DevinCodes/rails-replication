@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2023_08_29_141944) do
 
   create_table "paths", force: :cascade do |t|
     t.string "title"
+    t.string "algolia_id"
     t.text "description"
     t.decimal "archive_number"
     t.datetime "created_at", precision: 6, null: false
