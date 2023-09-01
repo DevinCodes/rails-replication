@@ -9,7 +9,11 @@ class Path < ApplicationRecord
   end
 
   def self.trigger_algolia_worker(path, remove)
-    puts "Called trigger_worker!"
+    puts "trigger_algolia_worker"
+  end
+
+  def algolia_id
+    "item#{self.id}"
   end
 
 end
